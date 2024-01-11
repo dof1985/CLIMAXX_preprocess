@@ -1,0 +1,171 @@
+{
+    "nut_level": 2,
+    "nuts_shape": "../data/shapes/west_balkans_ukr_md_level_2.shp",
+    "aggregate_level": "NUTS2_ID",
+    "wbalkan_uk_md_db": "../data/wbalkan_uk_md.db",
+    "crop_extent": "../data/shapes/west_balkans_ukr_md_shape.shp",
+    "hazards": {
+        "pev": {
+            "var_name": "pev",
+            "var_mean_files": "../data/ERA5/pev_monthly_means_files.json",
+            "run_mean": false,
+            "nuts_mean_dir": "../data/ERA5/pev_nuts2_means"
+        },
+        "t2m": {
+            "var_name": "t2m",
+            "var_mean_files": "../data/ERA5/t2m_monthly_means_files.json",
+            "run_mean": false,
+            "nuts_mean_dir": "../data/ERA5/t2m_nuts2_means"
+        },
+        "tp": {
+            "var_name": "tp",
+            "var_mean_files": "../data/ERA5/tp_monthly_means_files.json",
+            "run_mean": false,
+            "nuts_mean_dir": "../data/ERA5/tp_nuts2_means"
+        },
+        "wet_fpan": {
+            "var_name": "wet_fpan",
+            "var_mean_files": "../data/wetland_fapan/fapan_clipped_rasters.json",
+            "run_mean": false,
+            "nuts_mean_dir": "../data/wetland_fapan/nuts2_means"
+        },
+        "forest_lai": {
+            "var_name": "forest_lai",
+            "var_mean_files": "../data/forest_lai/Lai_500m_clipped_rasters.json",
+            "run_mean": false,
+            "nuts_mean_dir": "../data/forest_lai/nuts2_means"
+        },
+        "soil_moist": {
+            "var_name": "soil_moist",
+            "var_mean_files": "../data/soil_moisture_index/soil_moist_index_month_means.json",
+            "run_mean": false,
+            "nuts_mean_dir": "../data/soil_moisture_index/nuts2_means_month"
+        }
+    },
+    "vulnerabilities": {
+        "forest": {
+            "run_mean": false,
+            "raster_files": {
+                "2001": "../data/EU_TreeMap/DominantSpecies.tif"
+            }
+        }
+    },
+    "water_transport": {
+        "down_data": "../data/inland_water_transport/download/inland_water_transport.csv",
+        "out_file": "../data/inland_water_transport/nuts_means/inland_water_transport_nuts2_means.csv",
+        "run_mean": false
+    },
+    "aridity": {
+        "arid_raster_path": "../data/aridity/downloads/aridity.tif",
+        "arid_raster_clip_path": "../data/aridity/clipped_rasters/aridity_clip.tif",
+        "aridity_csv": "../data/aridity/nuts_means/aridity_nuts2_means.csv",
+        "run_mean": false
+    },
+    "ecoregions": {
+        "run_eco": false,
+        "ecoregions_nuts": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/ecoregions/nuts_means/wes_balkan_ukr_md_level2_ecoregions.shp",
+        "field": "ECO_CODE"
+    },
+    "tree_spp": {
+        "run_tree_spp": false,
+        "tree_spp_nuts": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/EU_TreeMap/nuts_means/tree_sp_nuts2.shp"
+    },
+    "aez": {
+        "run_aez": false,
+        "aez_nuts": "../data/agro_eco_zones/nuts_means/agroeco_zones_nuts2.shp",
+        "field": "aez_code"
+    },
+    "hydropower": {
+        "run_hydropower": false,
+        "hydro_data": "../data/hydropower/downloads/IEA_hydro.csv",
+        "hydro_shape": "../data/hydropower/nuts_means/hydropower_nuts2.shp"
+    },
+    "gdp": {
+        "run_gdp": false,
+        "nc_file": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/gdp/downloads/GDP_PPP_1990_2015_5arcmin_v2.nc",
+        "var": "GDP_PPP",
+        "var_dir": "../data/gdp/rasters",
+        "clip_dir": "../data/gdp/rasters_clip",
+        "gdp_shape": "../data/gdp/nuts_means/gdp_ppp_nuts2.shp"
+    },
+    "crops": {
+        "run_crops": false,
+        "out_rasters_dir": "../data/crops/rasters",
+        "nc_downloads": "../data/crops/downloads",
+        "out_dir_clips": "../data/crops/clip_rasters",
+        "nc_vars": [
+            "wheat_yield",
+            "maize_yield",
+            "soybean_yield",
+            "rice_yield"
+        ],
+        "nc_files_map": {
+            "wheat_yield": "../data/crops/downloads/wheat_yieldsTS.nc",
+            "maize_yield": "../data/crops/downloads/maize_yieldsTS.nc",
+            "soybean_yield": "../data/crops/downloads/soybean_yieldsTS.nc",
+            "rice_yield": "../data/crops/downloads/rice_yieldsTS.nc"
+        },
+        "nuts_mean_dir": "../data/crops/nuts_means/"
+    },
+    "npp": {
+        "run_npp": false,
+        "var_name": "NPP",
+        "nc_file": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/npp/download/EXP_NPPWetland03.nc",
+        "rasters_dir": "../data/npp/rasters",
+        "clip_rasters_dir": "../data/npp/clip_rasters",
+        "nuts_mean_dir": "../data/npp/nuts_means",
+        "npp_shape": "../data/npp/nuts_means/npp_nuts2.shp"
+    },
+    "npp_forest": {
+        "run_npp": true,
+        "var_name": "NPPForest",
+        "nc_file": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/npp_forest/download/EXP_NPPOverForest.nc",
+        "rasters_dir": "../data/npp_forest/rasters",
+        "clip_rasters_dir": "../data/npp_forest/clip_rasters",
+        "nuts_mean_dir": "../data/npp_forest/nuts_means",
+        "npp_shape": "../data/npp_forest/nuts_means/npp_nuts2.shp"
+    },
+    "forest": {
+        "forest_run": false,
+        "nuts_means_shape": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/forest_map/nuts_means/forest_majority_code_wbalkans_ukr_nut_2.shp",
+        "nuts_means_csv": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/forest_map/nuts_means/forest_majority_code_wbalkans_ukr_nuts2.csv",
+        "for_field": "forest_maj"
+    },
+    "shir": {
+        "run_shir": false,
+        "shir_nuts_mean_shp": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/share_irrigation/nuts_mean/shareIrr_west_balkans_ukr_md_nuts_mean_2.shp",
+        "shir_nuts_mean_csv": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/share_irrigation/nuts_mean/shareIrr_west_balkans_ukr_md_nuts_mean_2.csv",
+        "shi_field": "shareIrr_m"
+    },
+    "shir_maize": {
+        "run_shir": true,
+        "shir_nuts_mean_shp": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/share_irrigation/nuts_mean/MaizShareIrr_west_balkans_ukr_md_nuts_mean_2.shp",
+        "shir_nuts_mean_csv": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/share_irrigation/nuts_mean/MaizeShareIrr_west_balkans_ukr_md_nuts_mean_2.csv",
+        "shi_field": "irrMaiz_me"
+    },
+    "shir_wheat": {
+        "run_shir": true,
+        "shir_nuts_mean_shp": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/share_irrigation/nuts_mean/WheatShareIrr_west_balkans_ukr_md_nuts_mean_2.shp",
+        "shir_nuts_mean_csv": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/share_irrigation/nuts_mean/WheatShareIrr_west_balkans_ukr_md_nuts_mean_2.csv",
+        "shi_field": "irrWheat_m"
+    },
+    "soic": {
+        "run_soic": false,
+        "soic_nuts_mean_shp": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/soil_compact/nuts_mean/soil_compact_west_balkans_ukr_md_nuts_mean_2.shp",
+        "soic_nuts_mean_csv": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/soil_compact/nuts_mean/soil_compact_west_balkans_ukr_md_nuts_mean_2.csv",
+        "soic_field": "soil_comp_"
+    },
+    "wgi": {
+        "run_wgi": false,
+        "wgi_nuts_mean_shp": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/wgi/nuts_means/wgi_west_balkans_ukr_md_level2.shp",
+        "wgi_nuts_mean_csv": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/wgi/nuts_means/wgi_west_balkans_ukr_md_level_2.csv"
+    },
+    "swc": {
+        "run_swc": false,
+        "swc_files": {
+            "0cm": "../data/soil_water_capacity/nuts_means/water_cap_0cm_west_balkans_ukr_md_nut2_2.shp",
+            "10cm": "../data/soil_water_capacity/nuts_means/water_cap_10cm_west_balkans_ukr_md_nut2_2.shp",
+            "100cm": "../data/soil_water_capacity/nuts_means/water_cap_100cm_west_balkans_ukr_md_nut2_2.shp"
+        }
+    }
+}

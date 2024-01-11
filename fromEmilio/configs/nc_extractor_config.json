@@ -1,0 +1,20 @@
+{
+	"nuts_shape": "P:/watproject/EDORA_Balkan/2_ML/calculate_indices/drough_asses/wbalkan/data/base/shapes/west_balkans_ukr_md_level_2.shp",
+	"nc_directory": "P:/watxene/ISIMIP/ISIMIP3b/InputData/climate_updated/bias-adjusted/historical",
+	"vars_dict": { "_hurs_":"hurs",
+					"_pr_global_": "pr",
+					"_huss_": "huss",
+					"_prsn_global_": "prsn",
+					"_ps_global_": "ps",
+					"_rlds_": "rlds",
+					"_rsds_": "rsds",
+					"_tas_global_": "tas"
+					
+						
+	
+	},
+	"aggregation_field": "NUTS2_ID",
+	"shapefile_drop_cols": ["CNTR_CODE", "LEVL_CODE", "NUTS2_ID", "Shape_Leng", "Shape_Area", "geometry"]
+
+
+}

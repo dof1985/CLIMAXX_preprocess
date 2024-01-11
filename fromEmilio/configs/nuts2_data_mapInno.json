@@ -1,0 +1,44 @@
+{ 
+
+	"hazards":{
+		
+	},
+	"impacts":{ 
+		"Animal_slaughter": "C:/Users/dof19/Documents/Github/drough_asses/wbalkan/data/base/csv_impact_romaniaInnov/Animal_slaughter.csv",
+		"fire_intactarea": "C:/Users/dof19/Documents/Github/drough_asses/wbalkan/data/base/csv_impact_romaniaInnov/fire_intactarea.csv",
+		"MILK_THOUSANDSHECTOLITER": "C:/Users/dof19/Documents/Github/drough_asses/wbalkan/data/base/csv_impact_romaniaInnov/MILK_THOUSANDSHECTOLITER.csv",
+		"tourists_boats": "C:/Users/dof19/Documents/Github/drough_asses/wbalkan/data/base/csv_impact_romaniaInnov/tourists_boats.csv",
+		"watersupply_rural": "C:/Users/dof19/Documents/Github/drough_asses/wbalkan/data/base/csv_impact_romaniaInnov/watersupply_rural.csv",
+		"watersupply_urban": "C:/Users/dof19/Documents/Github/drough_asses/wbalkan/data/base/csv_impact_romaniaInnov/watersupply_urban.csv",
+		"wood_cutting": "C:/Users/dof19/Documents/Github/drough_asses/wbalkan/data/base/csv_impact_romaniaInnov/wood_cutting.csv"
+	},
+	"vulnerability":{ 
+		
+	},
+	"exposure":{ 
+		
+	
+	},
+	"old": {
+		"aridity" : "/home/politti/git/wbalkan_drought_assess/wbalkan/data/aridity/nuts_means/aridity_nuts2_means.csv",
+		"hydropower_prod": "C:/Users/dof19/Documents/Github/drough_asses/wbalkan/data/base/csv_impact/energy.csv",
+		"ecoregions" : "/home/politti/git/wbalkan_drought_assess/wbalkan/data/ecoregions/nuts_means/wes_balkan_ukr_md_level2_ecoregions.csv",
+		"agro_eco_zones" :"/home/politti/git/wbalkan_drought_assess/wbalkan/data/agro_eco_zones/nuts_means/agroeco_zones_nuts2.csv",
+		"share_irrigation" : "/home/politti/git/wbalkan_drought_assess/wbalkan/data/share_irrigation/nuts_mean/shareIrr_west_balkans_ukr_md_nuts_mean_2.csv",
+		"soiL_compact" : "/home/politti/git/wbalkan_drought_assess/wbalkan/data/soil_compact/nuts_mean/soil_compact_west_balkans_ukr_md_nuts_mean_2.csv",
+		"wgi": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/wgi/nuts_means/wgi_west_balkans_ukr_md_level_2.csv",
+		"soil_water_capacity_0cm": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/soil_water_capacity/nuts_means/water_cap_0cm_west_balkans_ukr_md_nut_2.csv",
+		"soil_water_capacity_10cm": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/soil_water_capacity/nuts_means/water_cap_10cm_west_balkans_ukr_md_nut_2.csv",
+		"soil_water_capacity_100cm": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/soil_water_capacity/nuts_means/water_cap_100cm_west_balkans_ukr_md_nut_2.csv",
+		"forest" :"/home/politti/git/wbalkan_drought_assess/wbalkan/data/forest_map/nuts_means/forest_majority_code_wbalkans_ukr_nuts2.csv",
+		"wetland": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/npp/nuts_means/npp_NUTS_2_means.csv",
+		"forest_lai": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/forest_lai/nuts2_means/forest_lai_NUTS2_ID_means.csv", 
+		"wetland_fpan": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/wetland_fapan/nuts2_means/wet_fpan_NUTS2_ID_means.csv",
+		"wheat": "/home/politti/git/wbalkan_drought_assess/wbalkan/data/crops/nuts_means/crop/wheat_crop_NUTS2_ID_means.csv",
+		"rice":"/home/politti/git/wbalkan_drought_assess/wbalkan/data/crops/nuts_means/crop/rice_crop_NUTS2_ID_means.csv",
+		"soybean":"/home/politti/git/wbalkan_drought_assess/wbalkan/data/crops/nuts_means/crop/soybean_crop_NUTS2_ID_means.csv",
+		"maize":"/home/politti/git/wbalkan_drought_assess/wbalkan/data/crops/nuts_means/crop/maize_crop_NUTS2_ID_means.csv"
+	}
+	
+
+}
